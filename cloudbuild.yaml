@@ -6,4 +6,4 @@ steps:
   args: ['install']
 - name: 'node'
   entrypoint: 'npm'
-  args: ['run', 'encore:watch']
+  args: ['run', 'encore:build']
