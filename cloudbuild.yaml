@@ -1,0 +1,9 @@
+steps:
+- name: 'docker'
+  args: ['build', '--pull', '--no-cache', '-t', 'gcr.io/my-project-id/myimage', '.']
+- name: 'node'
+  entrypoint: 'npm'
+  args: ['install']
+- name: 'node'
+  entrypoint: 'npm'
+  args: ['run', 'encore:watch']
